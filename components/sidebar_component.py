@@ -40,8 +40,8 @@ class SidebarComponent:
                     [
                         # Note que active="exact" é fundamental para destacar a página atual
                         dbc.NavLink("Página Inicial", href="/", active="exact", className="my-1"),
-                        dbc.NavLink("Relatório de Vendas", href="/vendas", active="exact", className="my-1"),
-                        dbc.NavLink("Relatório de Marketing", href="/marketing", active="exact", className="my-1"),
+                        #dbc.NavLink("Relatório de Vendas", href="/vendas", active="exact", className="my-1"),
+                        #dbc.NavLink("Relatório de Marketing", href="/marketing", active="exact", className="my-1"),
                     ],
                     vertical=True,
                     pills=True,
