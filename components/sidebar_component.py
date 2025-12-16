@@ -1,6 +1,7 @@
 import dash_bootstrap_components as dbc
 from dash import html
 
+
 class SidebarComponent:
     """
     Componente Sidebar que encapsula o layout de navegação.
@@ -18,7 +19,7 @@ class SidebarComponent:
         "width": SIDEBAR_WIDTH,
         "padding": "2rem 1rem",
         "background-color": "#c3ccd4",
-        "zIndex": 1000, # Garante que fique acima do conteúdo
+        "zIndex": 1000,  # Garante que fique acima do conteúdo
     }
 
     # Estilo necessário para empurrar o conteúdo principal
@@ -26,7 +27,7 @@ class SidebarComponent:
         "margin-left": SIDEBAR_WIDTH,
         "padding": "0",
         "background-color": "#ffffff",
-        "min-height": "100vh"
+        "min-height": "100vh",
     }
     # -------------------------------------------
 
@@ -39,9 +40,16 @@ class SidebarComponent:
                 dbc.Nav(
                     [
                         # Note que active="exact" é fundamental para destacar a página atual
-                        dbc.NavLink("Página Inicial", href="/", active="exact", className="my-1"),
-                        #dbc.NavLink("Relatório de Vendas", href="/vendas", active="exact", className="my-1"),
-                        #dbc.NavLink("Relatório de Marketing", href="/marketing", active="exact", className="my-1"),
+                        dbc.NavLink(
+                            "Página Inicial", href="/", active="exact", className="my-1"
+                        ),
+                        dbc.NavLink(
+                            "Cálculo Reações",
+                            href="/patolas",
+                            active="exact",
+                            className="my-1",
+                        ),
+                        # dbc.NavLink("Relatório de Marketing", href="/marketing", active="exact", className="my-1"),
                     ],
                     vertical=True,
                     pills=True,
