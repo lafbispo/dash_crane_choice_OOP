@@ -10,7 +10,7 @@ from scipy.spatial import ConvexHull
 from app import app
 from components.tabela_component import TabelaDadosComponent
 from models.inputs_guindaste import EntradaGuindaste
-from shapely.geometry import Polygon, Point, LineString
+#from shapely.geometry import Polygon, Point, LineString
 from engine.calc_reactions import calc_reactions
 
 # =====================================================
