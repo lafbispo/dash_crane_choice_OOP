@@ -347,10 +347,10 @@ tabela_solo = TabelaDadosComponent(
     "solo",
     [
         {"name": "Solo", "id": "solo"},
-        {"name": "Rigidez [MPa]", "id": "soil_k", "type": "numeric"},
+        {"name": "Rigidez [Pa]", "id": "soil_k", "type": "numeric"},
         {"name": "Área [m²]", "id": "soil_area_i", "type": "numeric"},
     ],
-    [{"solo": "Comum", "soil_k": 1.0, "soil_area_i": 1.0}],
+    [{"solo": "Comum", "soil_k": 100.e6, "soil_area_i": 2.2}],
     allow_add_rows=False,
     row_deletable=False,
 )
@@ -362,7 +362,7 @@ tabela_pesos = TabelaDadosComponent(
         {"name": "Peso do Guindaste [ton]", "id": "Peso_Guindaste", "type": "numeric"},
         {"name": "Contrapeso [ton]", "id": "Contrapeso", "type": "numeric"},
     ],
-    [{"Peso_Guindaste": 60.0, "Contrapeso": 12.0}],
+    [{"Peso_Guindaste": 36.0, "Contrapeso": 12.0}],
     allow_add_rows=False,
     row_deletable=False,
 )
