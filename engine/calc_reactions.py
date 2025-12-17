@@ -24,8 +24,8 @@ def calc_reactions(entrada):
 
     R_dict["R5"] = np.array(
         [
-            entrada.lanca.Raio * np.cos(entrada.angulo_giro_deg),
-            entrada.lanca.Raio * np.sin(entrada.angulo_giro_deg),
+            entrada.lanca.Raio * np.cos(np.radians(entrada.angulo_giro_deg)),
+            entrada.lanca.Raio * np.sin(np.radians(entrada.angulo_giro_deg)),
             np.sqrt(entrada.lanca.Lanca**2 - entrada.lanca.Raio**2),
         ]
     )
